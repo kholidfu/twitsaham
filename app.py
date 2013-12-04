@@ -8,18 +8,15 @@ now_time = datetime.datetime.fromtimestamp(time.mktime(time.gmtime((datetime.dat
 # url
 # https://twython.readthedocs.org/en/latest/usage/advanced_usage.html
 
-cons_key = 'wjK82GEwfXhD7mQep76p8Q'
-cons_secret = 'wr5bymR0jt8N7Kl5CUw22g2cngmMLFsaZnt7AWE8'
-acc_token = '14355401-A71yN2Ik9tZEroe1neT2P2v9LBOgIpAhBWGrTLYbp'
-acc_token_sec = 'MA1950ket722UktcCfO3zGFMkRKxFEngShWeqgaQY'
+cons_key = 'your_consumer_key'
+cons_secret = 'your consumer secret key'
+acc_token = 'your account token'
+acc_token_sec = 'your token secret'
 
 t = Twython(app_key=cons_key,
             app_secret=cons_secret,
             oauth_token=acc_token,
             oauth_token_secret=acc_token_sec)
-
-# update no media
-# t.update_status(status='hello from twython!')
 
 
 # download and analyze it

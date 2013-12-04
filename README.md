@@ -20,6 +20,18 @@ Menampilkan Data
 ----------------
 Setelah diolah, data ditampilkan menggunakan pustaka matplotlib.
 
+How to Use
+----------
+Pastikan Python sudah terpasang pada sistem operasi komputer Anda, lalu 
+jalankan:
+
+    $ python app.py
+
 Kontak 
 ------
 twitter: @sopier
+
+TODO:
+-----
+- Fleksibel lookup based on Company Name
+- More Technical Analysis Included

@@ -8,10 +8,10 @@ now_time = datetime.datetime.fromtimestamp(time.mktime(time.gmtime((datetime.dat
 # url
 # https://twython.readthedocs.org/en/latest/usage/advanced_usage.html
 
-cons_key = 'your_consumer_key'
-cons_secret = 'your consumer secret key'
-acc_token = 'your account token'
-acc_token_sec = 'your token secret'
+cons_key = ''
+cons_secret = ''
+acc_token = ''
+acc_token_sec = ''
 
 t = Twython(app_key=cons_key,
             app_secret=cons_secret,
@@ -23,4 +23,6 @@ t = Twython(app_key=cons_key,
 pshm.dl()
 # update twitter _with_media
 photo = open('ihsg.png', 'rb')
-t.update_status_with_media(status='[Autotwit] Grafik Pergerakan IHSG 3 bulan terakhir dgn Analisis MACD ' + now_time + ' #saham #ihsg #jci #idx', media=photo)
+#t.update_status_with_media(status='[Autotwit] Grafik Pergerakan IHSG 3 bulan terakhir dgn Analisis MACD ' + now_time + ' #saham #ihsg #jci #idx', media=photo)
+t.upload_media(status='[Autotwit] Grafik Pergerakan IHSG 3 bulan terakhir dgn Analisis MACD ' + now_time + ' #saham #ihsg #jci #idx', media=photo)
+photo.close()

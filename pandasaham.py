@@ -11,7 +11,7 @@ import urllib2
 def dl():
     url = 'http://finance.yahoo.com/q/hp?s=%5EJKSE+Historical+Prices'
     html = urllib2.urlopen(url).read()
-    pattern = re.compile(r"http://ichart.*=\.csv\"")
+    pattern = re.compile(r"http://real-chart.*=\.csv\"")
     m = re.search(pattern, html).group()
 
     with open('table.csv', 'wb') as f:
